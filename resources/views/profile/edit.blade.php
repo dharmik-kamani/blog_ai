@@ -224,7 +224,7 @@ $(document).ready(function() {
         form.find('input').removeClass('border-red-500');
 
         $.ajax({
-            url: "{{ route('password.reset') }}",
+            url: "{{ route('profile.password.reset') }}",
             method: "POST",
             data: new FormData(this),
             processData: false,
